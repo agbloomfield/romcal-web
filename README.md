@@ -1,5 +1,5 @@
 # romcal-web
-Static front end for the (romcal)[https://github.com/pejulian/romcal] module
+Static front end for the [romcal](https://github.com/pejulian/romcal) module
 
 ## Installation and running
 - Checkout

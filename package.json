@@ -4,7 +4,8 @@
   "description": "Static frontend for the romcal module",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js",
+    "start": "webpack-dev-server --config webpack.local.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "npm run test"
   },
   "keywords": [
@@ -29,6 +30,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.7",
     "fullcalendar": "^3.8.2",
+    "html-webpack-plugin": "^2.30.1",
     "moment": "^2.20.1",
     "node-sass": "^4.7.2",
     "prop-types": "^15.6.0",
@@ -41,6 +43,7 @@
     "sass-loader": "^6.0.6",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.20.2",
+    "uglifyjs-webpack-plugin": "^1.2.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1",

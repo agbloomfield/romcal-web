@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   
@@ -33,10 +32,6 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'romcal-web',
-      template: 'index.html'
-    })
   ],
 
   // When importing a module whose path matches one of the following, just

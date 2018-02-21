@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 export class Home extends Component {
+
+  componentDidMount() {
+    console.log('Home');
+  }
+
 	render() {
 		return (
 			<div className="col-xs-12">

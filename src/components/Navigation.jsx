@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Route, RouteHandler, Link } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 
@@ -16,7 +15,7 @@ export class Navigation extends Component {
 		return (
 			<Navbar fixedTop >
 		    <Navbar.Header>
-				  <Navbar.Brand>
+				  <Navbar.Brand>  
 						<a href="/">Romcal</a>
 				  </Navbar.Brand>
 				</Navbar.Header>

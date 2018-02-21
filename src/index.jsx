@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+// https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writting-manually
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { Navigation } from './components/Navigation';
 import { Home } from './components/Home';
@@ -10,13 +11,12 @@ ReactDOM.render(
 	<Router>
 		<div>
 			<Navigation/>
-			<div className="container">
-				<div className="row">
-					<Route exact path="/" component={Home} />
-					<Route exact path="/calendar" component={Calendar} />
-				</div>
-			</div>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route path="/calendar" component={Calendar} />
+			  <Route component={Home}/>
+			</Switch>
 		</div>
 	</Router>,
-	document.getElementById('root')
+	document.getElementById('romcal')
 );
